@@ -1,0 +1,213 @@
+.centered, body .scene, body .scene .bear, body .scene .bear .head, body .scene .bear .head .nose, body .scene .bear .head .nose::before, body .scene .bear .head .nose::after, body .scene .bear .head .eye::before, body .scene .bear .neck, body .scene .bear .body, body .scene .bear .body .hand, body .scene .bear .body .leg {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute; }
+
+.part, body .scene .bear .head, body .scene .bear .head .ear, body .scene .bear .neck, body .scene .bear .body, body .scene .bear .body .hand, body .scene .bear .body .leg {
+  background-color: #735340; }
+
+body .scene {
+  background-color: #ECD6BF;
+  overflow: hidden;
+  width: 640px;
+  height: 480px;
+  border: 4px solid #735340;
+  border-radius: 5px; }
+  body .scene .bear {
+    height: 68%;
+    width: 35%;
+    overflow: hidden; }
+    body .scene .bear .head {
+      height: 47%;
+      top: -40%;
+      width: 92%;
+      border-top-left-radius: 35% 45%;
+      border-top-right-radius: 35% 45%;
+      border-bottom-right-radius: 35% 50%;
+      border-bottom-left-radius: 35% 50%; }
+      body .scene .bear .head .ear {
+        position: relative;
+        height: 20%;
+        width: 20%;
+        border-bottom-right-radius: 35% 50%;
+        border-bottom-left-radius: 35% 50%; }
+      body .scene .bear .head .nose {
+        height: 30%;
+        width: 25%;
+        background-color: #A6866A;
+        top: 65%;
+        border-top-left-radius: 65% 45%;
+        border-top-right-radius: 65% 45%;
+        border-bottom-right-radius: 35% 50%;
+        border-bottom-left-radius: 35% 50%; }
+        body .scene .bear .head .nose::before {
+          content: "";
+          display: block;
+          width: 0;
+          top: -35%;
+          height: 0;
+          border: 0 solid transparent;
+          border-right-width: 15px;
+          border-left-width: 15px;
+          border-bottom: 13px solid black; }
+        body .scene .bear .head .nose::after {
+          content: "";
+          display: block;
+          width: 45%;
+          height: 30%;
+          top: 40%;
+          background-color: mistyrose;
+          left: 20%;
+          border-top-left-radius: 100%;
+          border-top-right-radius: 100%;
+          border-bottom-right-radius: 50%;
+          border-bottom-left-radius: 50%; }
+      body .scene .bear .head .eye {
+        position: relative;
+        background-color: #FFFFFF;
+        height: 30%;
+        width: 30%;
+        border-radius: 50%;
+        transform: rotate(90deg); }
+        body .scene .bear .head .eye::before {
+          height: 30%;
+          width: 30%;
+          background-color: black;
+          content: "";
+          display: block;
+          top: 50%;
+          border-radius: 50%; }
+      body .scene .bear .head #left.eye {
+        left: 25%; }
+      body .scene .bear .head #left.ear {
+        top: -10%;
+        border-top-left-radius: 70%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 25%;
+        border-bottom-left-radius: 90%; }
+      body .scene .bear .head #right.eye {
+        top: -30%;
+        left: 50%;
+        animation: blinkingR 2.8s ease-out infinite; }
+      body .scene .bear .head #right.ear {
+        top: -30%;
+        left: 80%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 70%;
+        border-bottom-right-radius: 90%;
+        border-bottom-left-radius: 25%; }
+    body .scene .bear .neck {
+      height: 25%;
+      width: 50%;
+      top: 30%; }
+      body .scene .bear .neck::before {
+        content: "";
+        display: block;
+        width: 40%;
+        height: 100%;
+        background-color: #ECD6BF;
+        left: -25%;
+        top: -1%;
+        position: relative;
+        border-bottom-right-radius: 10% 100%;
+        transform: rotate(20deg);
+        border-top-right-radius: 60% 33%; }
+      body .scene .bear .neck::after {
+        content: "";
+        display: block;
+        background-color: #ECD6BF;
+        top: -102%;
+        left: 84%;
+        width: 40%;
+        height: 100%;
+        position: relative;
+        border-bottom-left-radius: 10% 100%;
+        border-top-left-radius: 60% 33%;
+        transform: rotate(-20deg); }
+    body .scene .bear .body {
+      height: 35%;
+      width: 55%;
+      top: 63%;
+      border-top-left-radius: 55% 70%;
+      border-top-right-radius: 55% 70%;
+      border-bottom-right-radius: 30%;
+      border-bottom-left-radius: 30%; }
+      body .scene .bear .body::before {
+        content: "";
+        display: block;
+        width: 55%;
+        position: absolute;
+        height: 70%;
+        border-radius: 50%;
+        top: 30%;
+        left: 25%;
+        background-color: mistyrose; }
+      body .scene .bear .body .hand {
+        position: relative;
+        border-top-left-radius: 55% 70%;
+        border-top-right-radius: 55% 70%;
+        width: 30%;
+        height: 70%; }
+      body .scene .bear .body .leg {
+        position: relative;
+        width: 30%;
+        height: 50%;
+        border-top-left-radius: 55% 70%;
+        border-top-right-radius: 55% 70%; }
+      body .scene .bear .body #left.hand {
+        top: -10%;
+        left: -50%;
+        transform: rotate(60deg);
+        border-bottom-right-radius: 100% 55%;
+        border-bottom-left-radius: 30%; }
+      body .scene .bear .body #left.leg {
+        top: -90%;
+        left: -65%;
+        transform: rotate(-30deg);
+        border-bottom-right-radius: 30%;
+        border-bottom-left-radius: 100% 55%; }
+      body .scene .bear .body #right.hand {
+        top: -80%;
+        left: 50%;
+        transform: rotate(-60deg);
+        border-bottom-right-radius: 30%;
+        border-bottom-left-radius: 100% 55%;
+        animation: waveR 3.8s ease-out infinite; }
+      body .scene .bear .body #right.leg {
+        top: -140%;
+        left: 65%;
+        transform: rotate(30deg);
+        border-bottom-right-radius: 100% 55%;
+        border-bottom-left-radius: 30%; }
+
+@keyframes blinkingR {
+  0% {
+    height: 30%; }
+  40% {
+    height: 30%; }
+  41% {
+    height: 0;
+    top: -30%; }
+  42% {
+    height: 30%; }
+  100% {
+    height: 30%; } }
+
+@keyframes waveR {
+  0% {
+    transform: rotate(-60deg);
+    top: -80%; }
+  20% {
+    transform: rotate(-120deg);
+    top: -90%; }
+  30% {
+    transform: rotate(-60deg);
+    top: -80%; }
+  40% {
+    transform: rotate(-120deg);
+    top: -90%; }
+  100% {
+    transform: rotate(-60deg); } }
